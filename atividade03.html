@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <h1>Calculo de quem é mais novo</h1>
+    <div id="resultado"></div>
+    <script>
+        let nome1 = prompt ("Digite o nome da primeira pessoa")
+        let ano1 = Number(prompt ("Digite o ano de nascimento da mesma"))
+        let nome2 = prompt ("Digite o nome da segunda pessoa")
+        let ano2 = Number(prompt ("Digite o ano de nascimento da mesma"))
+        let idade1 = (2022 - ano1)
+        let idade2 = (2022 - ano2)
+        let resul
+
+        if (idade1>idade2){
+            resul = "O " + nome2 + " idade: " + idade2 + " é mais novo que: " + nome1 + " idade: " + idade1
+        }else{
+            resul = "O " + nome1 + " idade: " + idade1 + " é mais novo que: " + nome2 + " idade: " + idade2
+        }
+        document.getElementById("resultado").innerHTML = resul;
+    </script>
+    
+</body>
+</html>
